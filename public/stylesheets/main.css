@@ -1,0 +1,245 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  padding: 0px;
+  margin: 5px 12px -17px 0px;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#biddiceface > img {
+  padding: 0px;
+  margin: 0px;
+}
+
+#dicedisplay > p {
+  padding: 0px;
+  margin: 5px 12px -17px 0px;
+  font-family: verdana;
+  font-size: 14px;
+  text-align: center;
+}
+
+.break {
+  font-size: 1pt;
+  margin:0px;
+  padding:0px;
+}
+
+div {
+  font-family: verdana;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: white;
+  font-size: 20px;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  font-family: verdana;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: white;
+  font-size: 20px;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+
+}
+
+#bids {
+  padding-left: 0px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#previousbid {
+  padding-top: 85px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+#bidengine {
+  padding-left: 0px;
+  padding-top: 0px;
+  display: flex; 
+  flex-direction: row;
+}
+
+.bidDiceVal > div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.bidDiceAmt > div {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+
+}
+
+.pBidDiceVal > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pBidDiceAmt > div {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+
+}
+
+.bidBut > div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+}
+
+.dicecount {
+font-family: verdana;
+}
+
+.player { 
+  color: black;
+  text-align: right;
+  background-color: #ffffff; 
+  position: relative;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 10px;  
+  width: 300px;
+  margin: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.it { 
+  color: black;
+  text-align: right;
+  background-color: yellow; 
+  background-image: url('../images/arrow.gif');
+  background-repeat:no-repeat;
+  background-position:left center;
+  position: relative;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 10px;  
+  width: 300px;
+  margin: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.observer { 
+  font-size: 14px;
+  color: white;
+  text-align: right;
+  background-color: #666666; 
+  position: relative;
+  left: 10px;
+  margin: 2px;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+input {
+  break-after: always;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+button {
+  height: 32px;
+  width: 128px;
+  background-color:#1e59bd;
+	border-radius:7px;
+	border:2px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:normal;
+	/* padding:9px 39px; */
+	text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+button:hover {
+	background-color:#476e9e;
+}
+button:active {
+	position:relative;
+	top:1px;
+}

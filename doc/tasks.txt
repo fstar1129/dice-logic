@@ -1,0 +1,51 @@
+Tasks
+
+Create a scenario (unique instance) for each group that is playing
+Sceneria must be shareable (see playcards.io) to add players to group
+All players begin with 5 dice
+Random roll of one die for each to determine who goes first
+Randomly roll dice
+Determine how man dice are rolled per participant (decrement after each round)
+Visual representation of dice, showing only the ones that belong to the current user
+Bid process:
+	Select number (2-6)
+	Select number of die
+	A bid must increase number on the die, or the number of die, or both
+Randomly resort order of play after every round (optional)
+
+Features for MVP:
+	- at least two players can join the game
+	- random dice are assigned to each member
+	- only showing dice values to the person who holds them
+	- HTML frontend represents players and their dice
+	- button to initiate re-roll
+	- reveal/remove/re-roll (re-roll first)
+	- one dice at a time can be removed from the game (from a single player)
+
+Version 1.0 Tasks
+	X Edit player name 
+	X Show number of dice
+	X Remove a dice rerolls
+	X Fix bug: Play again needs to re-hide dice.
+	X Hide Play Again button until the game is over (only one user has dice). Hide Liar! button when game is over.
+	X Differentiate dice from the number of dice.
+	X Users out of dice should disappear? Gray out? 
+
+	Bid functionality:
+	1. display users with "it" person in second position.
+	2. create a function that indexes who is "it" after each turn.
+	3. create a "i've bid button" which increments the "it" index by one.
+	- The array of users indicates the order of play. Second person goes first. After each round, order advances to next user.
+	- The second player listed is "it" and has the ability to create the first bid. Only this player can place a bid. Other uses can see current bid.
+	- The div at position number 2 is highlighted with a different color and a carrot on the left. Also, the bid controls appear to the right.
+		OR, bid controls and current bid appear at the top.
+	- The bid controls display the current bid with controls (TBD) for the player to increase the number of dice or the dice value or both.
+	- When a player ends the round by clicking the Liar! button, the dice are revealed and the bid engine determines the winner (pop up notification?)
+		One dice is automatically removed from the losing player.
+	
+	Other Enhancements:
+	- People who hit the URL get a user ID and a name, but no dice and are "observers" (assigned as "explayers") They look the same 
+			as players who are out of the game. In the createUserHandler, 0 dice are assgned.
+	- When users click the new button "Join Game" they are assigned dice and made active. This can only occur when a game is not in progress.
+		Join Game
+	- When game play starts, the players order is shuffled (randomly shuffle the array of users). 
